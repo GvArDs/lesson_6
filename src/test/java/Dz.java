@@ -69,5 +69,25 @@ public class Dz {
         System.out.println("\n>>> String");
         String s = null;
         System.out.println("\t\t" + s + " " + 1);
+
+        System.out.println("\n>>> Overflow byte");
+        int w = 127;
+        int z = (byte) (w + 1);
+        System.out.println("\t\t" + z);
+
+        System.out.println("\n>>> Overflow short");
+
+        int aW = 32767;
+        int aZ = (short) (aW + 1);
+        System.out.println("\t\t" + aZ);
+
+        System.out.println("\n>>> int and double");
+        int intA = 100;
+        double doubleB = 111.11;
+        System.out.println("\t\tintA + doubleB = " + (intA + doubleB));
+        System.out.println("\t\tintA - doubleB = " + (intA - doubleB));
+        System.out.println("\t\tintA * doubleB = " + (intA * doubleB));
+        System.out.println("\t\tintA / doubleB = " + (intA / doubleB));
+        System.out.println("\t\tintA % doubleB = " + (intA % doubleB));
     }
 }
